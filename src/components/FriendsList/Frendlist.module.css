@@ -1,0 +1,10 @@
+.listF {
+    background-color: rgb(153, 153, 197);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.nameFriend {
+    font-weight: 500;
+    font-size: 16px;
+}

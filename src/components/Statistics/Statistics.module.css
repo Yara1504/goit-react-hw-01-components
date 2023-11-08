@@ -1,0 +1,19 @@
+.statistics {
+    background-color: rgb(153, 153, 197);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.label {
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding-right: 15px;
+}
+.percentage {
+    font-weight: 500;
+}
