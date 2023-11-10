@@ -1,13 +1,13 @@
-import user from './Profile/user.json';
+import user from '../data/user.json';
 import Profile from './Profile/Profile';
 
-import data from './Statistics/data.json';
+import data from '../data/data.json';
 import Statistics from './Statistics/Statistics';
 
-import friends from './FriendsList/friends.json';
+import friends from '../data/friends.json';
 import FriendsList from './FriendsList/FriendsList';
 
-import transactios from './TransactionHistory/transactions.json'
+import transactios from '../data/transactions.json'
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 const App = () => {

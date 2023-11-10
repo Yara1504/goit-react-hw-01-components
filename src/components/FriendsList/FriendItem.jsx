@@ -5,7 +5,7 @@ import css from './Frendlist.module.css';
 export default function FriendItem({ id, avatar, name, isOnline }) {
     return (
         <li className={css.friendCard} key={id}>
-            <span className={css.status}>{isOnline}</span>
+            <span className={css.status} style={{ backgroundColor: isOnline ? 'green' : 'red' }}></span>
             <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
             <p className={css.nameFriend}>{name}</p>
         </li>
