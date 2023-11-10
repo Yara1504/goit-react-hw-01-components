@@ -8,13 +8,19 @@ export default function Statistics({ title, stats }) {
             <ul className={css.statList}>
                 
                     {stats.map(stat => (
-                        <li className={css.itemStat} key={stat.id}>
+                        <li className={css.itemStat} key={stat.id} style={{backgroundColor: getRandomHexColor()}}>
                         <span className={css.label}>{stat.label}</span>
                         <span className={css.percentage}>{stat.percentage}%</span>
                     </li>))}      
                 </ul>
         </section>
     )
+}
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
 }
 
 Statistics.propTypes = { 
